@@ -12,15 +12,17 @@
 	</head>
 	<body>
 
+	<ul>
 	<?php
 
 	$arr = ["mela","kiwi","pera"];
-
-	echo $arr[1];
+	for ($i=0; $i < count ($arr) ; $i++) { 
+	 	echo  '<li>'. $arr[$i]. '</li>';
+	 }
 		
 	?>
 
-
+	<ul>
 
 
 	
