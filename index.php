@@ -8,21 +8,47 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Array</title>
-	</head>
-	<body>
+    	<div class="container">
+	  <form>
+ 	 <div class="form-group">
+	    <label for="exampleInputEmail1">Name</label>
+	    <input type="text" class="form-control" id="examplNamet1" aria-describedby="text" placeholder="Name">
+	    <small id="textHelp" class="form-text text-muted">We'll never share your Name with anyone else.</small>
+ 	  </div>
+ 	  </div>
 
-	<ul>
-	<?php
+<div class="container">
+ 	  <div class="form-group">
+  	  <label for="exampleInputEmail1">surname</label>
+	    <input type="
+		surname" class="form-control" id="exampleInputsurname" aria-describedby="surnameHelp" placeholder="surname">
+ 	   <small id="surnameHelp" class="form-text text-muted">We'll never share your surname anyone else.</small>
+	  </div>  
+	  </div>
+	 
+	 <div class="container">
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Email address</label>
+ 	   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  	  <small id="emailHelp" class="form-text text-muted">We'll never 	share your email with anyone else.</small>
+ 	 </div>
+ 	 </div>
 
-	$arr = ["mela","kiwi","pera"];
-	for ($i=0; $i < count ($arr) ; $i++) { 
-	 	echo  '<li>'. $arr[$i]. '</li>';
-	 }
-		
-	?>
+		<div class="container">
+		  <div class="form-group">
+	    <label for="exampleFormControlTextarea1">Example textarea</label>
+	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+ 	 </div>
+	</div>
+	</form>	 
 
-	<ul>
+	 <div class="container">
+	  <div class="form-group form-check">
+ 	   <input type="checkbox" class="form-check-input" id="exampleCheck1">
+	   <label class="form-check-label" for="exampleCheck1">Check me out</label>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</div>
 
 
 	
