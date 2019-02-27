@@ -13,7 +13,7 @@
  	 <div class="form-group">
 	    <label for="exampleInputEmail1">Name</label>
 	    <input type="text" class="form-control" id="examplNamet1" aria-describedby="text" placeholder="Name">
-	    <small id="textHelp" class="form-text text-muted">We'll never share your Name with anyone else.</small>
+	    <small id="textHelp" class="form-text text-muted">Nome.</small>
  	  </div>
  	  </div>
 
@@ -22,17 +22,18 @@
   	  <label for="exampleInputEmail1">surname</label>
 	    <input type="
 		surname" class="form-control" id="exampleInputsurname" aria-describedby="surnameHelp" placeholder="surname">
- 	   <small id="surnameHelp" class="form-text text-muted">We'll never share your surname anyone else.</small>
+ 	   <small id="surnameHelp" class="form-text text-muted">Cognome.</small>
 	  </div>  
 	  </div>
 	 
 	 <div class="container">
-	  <div class="form-group">
-	    <label for="exampleInputEmail1">Email address</label>
- 	   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-  	  <small id="emailHelp" class="form-text text-muted">We'll never 	share your email with anyone else.</small>
+	   	  <div class="form-group">
+   			 <label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" 		aria-describedby="emailHelp" placeholder="Enter email">
+    		<small id="emailHelp" class="form-text text-muted">We'll never share 	your 		email with anyone else.</small>
+ 		 </div>
  	 </div>
- 	 </div>
+
 
 		<div class="container">
 		  <div class="form-group">
@@ -51,7 +52,6 @@
 	</div>
 
 
-	
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
