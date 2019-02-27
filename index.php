@@ -1,3 +1,13 @@
+<?php
+
+	$nome =(isset($_POST ["exampleInputNome"])) ? $_POST ["exampleInputNome"] : "";
+	print $nome;
+
+
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,29 +18,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    	<div class="container">
+     <form action= "index.php" method="post">
+
+
+     	<div class="container">
+     		<form action= "index.php" method="post">
 	  <form>
- 	 <div class="form-group">
-	    <label for="exampleInputEmail1">Name</label>
-	    <input type="text" class="form-control" id="examplNamet1" aria-describedby="text" placeholder="Name">
-	    <small id="textHelp" class="form-text text-muted">Nome.</small>
+ 	 	<div class="form-group">
+	    <label for="exampleInputNome">Nome</label>
+	    <input type="text" name="exampleInputNome" class="form-control" id="exampleInputNome" aria-describedby="text" placeholder="Nome">
+	    <small id="NomeHelp" class="form-text text-muted">Nome.</small>
  	  </div>
  	  </div>
 
 <div class="container">
+	<form action= "index.php" method="post">
  	  <div class="form-group">
-  	  <label for="exampleInputEmail1">surname</label>
-	    <input type="
-		surname" class="form-control" id="exampleInputsurname" aria-describedby="surnameHelp" placeholder="surname">
- 	   <small id="surnameHelp" class="form-text text-muted">Cognome.</small>
+  	  <label for="exampleInputcogome">cognome</label>
+	    <input type="cognome" name="exampleInputcogome" class="form-control" id="exampleInputcogome" aria-describedby="cognomeHelp" placeholder="cognome">
+ 	   <small id="cognomeHelp" class="form-text text-muted">Cognome.</small>
 	  </div>  
 	  </div>
 	 
 	 <div class="container">
+	 	<form action= "index.php" method="post">
 	   	  <div class="form-group">
    			 <label for="exampleInputEmail1">Email address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" 		aria-describedby="emailHelp" placeholder="Enter email">
-    		<small id="emailHelp" class="form-text text-muted">We'll never share 	your 		email with anyone else.</small>
+				<input type="email" name="exampleInputEmail1" class="form-control" id="exampleInputEmail1" 	aria-describedby="emailHelp" placeholder="Enter email">
+    		<small id="emailHelp" class="form-text text-muted">la tua email deve contenere la @</small>
  		 </div>
  	 </div>
 
