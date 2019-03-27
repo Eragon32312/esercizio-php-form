@@ -1,11 +1,27 @@
 <?php
 
-	$nome =(isset($_POST ["exampleInputNome"])) ? $_POST ["exampleInputNome"] : "";
-	print $nome;
-
+	$nome = (isset($_POST['exampleInputNome'])) ? $_POST['exampleInputNome'] : '';
+	
+	$cognome = (isset($_POST['exampleInputcogome'])) ? $_POST['exampleInputcogome'] : '';
+	
+	$Emailaddress = (isset($_POST['exampleInputEmail1'])) ? $_POST['exampleInputEmail1'] : '';
+	
 
 
 ?>
+
+
+<body>
+	<div class="container">
+		<div class="alert alert-primary" role="alert">
+		<?php
+			print $nome . '<br>';
+			print $cognome . '<br>';
+			print $Emailaddress . '<br>';
+		?>
+		</div>
+	</div>	
+</body>
 
 
 <!doctype html>
@@ -25,7 +41,7 @@
      		<form action= "index.php" method="post">
 	  <form>
  	 	<div class="form-group">
-	    <label for="exampleInputNome">Nome</label>
+	    <label for="exampleInputNome1">Nome</label>
 	    <input type="text" name="exampleInputNome" class="form-control" id="exampleInputNome" aria-describedby="text" placeholder="Nome">
 	    <small id="NomeHelp" class="form-text text-muted">Nome.</small>
  	  </div>
@@ -34,7 +50,7 @@
 <div class="container">
 	<form action= "index.php" method="post">
  	  <div class="form-group">
-  	  <label for="exampleInputcogome">cognome</label>
+  	  <label for="exampleInputcogome1">cognome</label>
 	    <input type="cognome" name="exampleInputcogome" class="form-control" id="exampleInputcogome" aria-describedby="cognomeHelp" placeholder="cognome">
  	   <small id="cognomeHelp" class="form-text text-muted">Cognome.</small>
 	  </div>  
@@ -43,7 +59,7 @@
 	 <div class="container">
 	 	<form action= "index.php" method="post">
 	   	  <div class="form-group">
-   			 <label for="exampleInputEmail1">Email address</label>
+   			 <label for="exampleInputEmail">Emailaddress</label>
 				<input type="email" name="exampleInputEmail1" class="form-control" id="exampleInputEmail1" 	aria-describedby="emailHelp" placeholder="Enter email">
     		<small id="emailHelp" class="form-text text-muted">la tua email deve contenere la @</small>
  		 </div>
@@ -65,6 +81,7 @@
 	  </div>
 	  <button type="submit" class="btn btn-primary">Submit</button>
 	</div>
+
 
 
 
