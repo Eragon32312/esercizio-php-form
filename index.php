@@ -7,11 +7,20 @@
 	$Emailaddress = (isset($_POST['exampleInputEmail1'])) ? $_POST['exampleInputEmail1'] : '';
 	
 
-
 ?>
 
 
 <body>
+
+	<div class="container">
+		
+		<?php if ($nome == ''): ?> 
+    	<div class="alert alert-danger" role="alert">Manca nome </div>
+    	<?php else: ?>
+    	<div class="alert alert-success" role="alert">Nome insrito</div>
+    	<?php endif; ?>
+
+	</div>		
 	<div class="container">
 		<div class="alert alert-primary" role="alert">
 			<ul>
@@ -22,7 +31,8 @@
 				?>
 			</ul>
 		</div>
-	</div>	
+	</div>
+	
 </body>
 
 
