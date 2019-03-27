@@ -15,9 +15,9 @@
 	<div class="container">
 		<div class="alert alert-primary" role="alert">
 		<?php
-			print $nome . '<br>';
-			print $cognome . '<br>';
-			print $Emailaddress . '<br>';
+		foreach ($_POST as $key => $value) {
+			print $value;
+		}
 		?>
 		</div>
 	</div>	
@@ -72,15 +72,19 @@
 	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
  	 </div>
 	</div>
-	</form>	 
 
-	 <div class="container">
+
+	<div class="container">
 	  <div class="form-group form-check">
  	   <input type="checkbox" class="form-check-input" id="exampleCheck1">
 	   <label class="form-check-label" for="exampleCheck1">Check me out</label>
 	  </div>
 	  <button type="submit" class="btn btn-primary">Submit</button>
 	</div>
+
+	</form>	 
+
+	 
 
 
 
