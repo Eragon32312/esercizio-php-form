@@ -14,11 +14,13 @@
 <body>
 	<div class="container">
 		<div class="alert alert-primary" role="alert">
-		<?php
-		foreach ($_POST as $key => $value) {
-			print $value;
-		}
-		?>
+			<ul>
+				<?php
+				foreach ($_POST as $key => $value) {
+			 	print '<li>' . $key . ':' . $value . '</li>' ;
+				}
+				?>
+			</ul>
 		</div>
 	</div>	
 </body>
